@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+</head>
+<style>
+		* {
+    padding: 0;
+    margin: 0
+}
+
+abbr,address,article,aside,audio,b,blockquote,body,button,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    font-family: "Microsoft YaHei",Arial,Helvetica;
+}
+		body,p,ul{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: #eee;
+		}
+		ul{
+			list-style: none;
+			list-style: none;
+		}
+		html,body{
+			width: 100%;
+			height: 100%
+		}
+		.main{
+			width: 100%;
+			max-width:640px;
+			margin: 0 auto;
+			padding:0 0.625rem;
+			box-sizing: border-box;
+			background: #fff;
+		}
+		.main .texts p{
+			font-size: 13px;
+		}
+		.listWrap{
+			margin-top:1.875rem;
+		}
+		.listItems{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.list-item{
+			width:50%;
+			text-align: center;
+			box-sizing: border-box;
+			overflow: hidden;
+		}
+		.list-item .imgCnt{
+			width:7.5rem;
+			height:6.25rem;
+			margin:0 auto;
+	        background: green;
+		}
+		.list-item a{
+			font-size:14px ;
+			display: block;
+		}
+		
+		/*移动端适配 width|height|font-size = 视觉稿量出来的值 / 100rem;@lbl*/
+@media screen and (max-width:359px) and (min-width:320px) {
+    html,body{
+        font-size: 16px !important;
+    }
+}
+@media screen and (max-width:374px) and (min-width:360px) {
+    html,body{
+        font-size: 18px !important;
+    }
+}
+@media screen and (max-width:413px) and (min-width:375px) {
+   html,body{
+        font-size: 18.75px !important;
+    }
+}
+@media screen and (max-width:639px)  and (min-width:414px){
+   html,body{
+        font-size:20.7px !important;
+    }
+}@media screen and (min-width:640px) {
+   html,body{
+        font-size: 16px !important;
+    }
+}
+	</style>
+<body>
+	 <div class="main">
+		<div class="texts">
+			<p>1.设计师提供的页面设计稿大小一般都是640px；</p>
+
+			<p>2.640/20=32，1rem=32，实际尺寸/32得到适配的尺寸</p>
+			<p>3.我在main中设置了一个最大尺寸640px，以保证ipad中能以640尺寸显示</p>
+
+			<p>3.不需要设置默认字体，终端浏览器会自动将字体设置为终端上的字体</p>
+		</div>
+		<div class="listWrap">
+			<ul class="listItems">
+				<li class="list-item">
+					<div class="imgCnt"></div>
+					<a>物美价廉</a>
+				</li>
+				<li class="list-item">
+					<div class="imgCnt"></div>
+					<a>物美价廉</a>
+				</li>
+				<li class="list-item">
+					<div class="imgCnt"></div>
+					<a>物美价廉</a>
+				</li>
+				<li class="list-item">
+					<div class="imgCnt"></div>
+					<a>物美价廉</a>
+				</li>
+					<li class="list-item">
+					<div class="imgCnt"></div>
+					<a>物美价廉</a>
+				</li>
+					<li class="list-item">
+					<div class="imgCnt"></div>
+					<a>物美价廉</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

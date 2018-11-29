@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>html根字体rem布局</title>
+	<style>
+		* {
+    padding: 0;
+    margin: 0
+}
+
+abbr,address,article,aside,audio,b,blockquote,body,button,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    font: 16px/1.5 "Microsoft YaHei",Arial,Helvetica;
+}
+		body,p,ul{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: #eee;
+		}
+		html,body{
+			font-size:625%;
+		}
+		ul{
+			list-style: none;
+			list-style: none;
+		}
+		.main{
+			width: 100%;
+			max-width:6.40rem;
+			margin: 0 auto;
+			padding:0 0.1rem;
+			box-sizing: border-box;
+			background: #fff;
+		}
+		.main .texts p{
+			font-size:0.13rem;
+		}
+		.listWrap{
+			margin-top:0.3rem;
+		}
+		.listItems{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.list-item{
+			width:50%;
+			text-align: center;
+		}
+		.list-item .imgCnt{
+			width:1.2rem;
+			margin:0 auto;
+			height:1rem;
+			box-sizing: border-box;
+			background: green;
+		}
+		.list-item a{
+			font-size:.14rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="texts">
+			<p>1.设计师提供的页面设计稿大小一般都是640px；</p>
+
+			<p>2.根字体设置百分比字号，所有标签字体都设置为16px大小，设计稿尺寸减半之后除以10得到相应的rem单位</p>
+			<p>3.注意应设置浏览器的fontSize为625%；有时谷歌浏览器的16*62.5%字体大小不等于10</p>
+
+			<p>4.不需要设置默认字体，终端浏览器会自动将字体设置为终端上的字体</p>
+		</div>
+		<div class="listWrap">
+			<ul class="listItems">
+				<li class="list-item">
+					<div class="imgCnt"></div>
+					<a>物美价廉</a>
+				</li>
+				<li class="list-item">
+					<div class="imgCnt"></div>
+					<a>物美价廉</a>
+				</li>
+				<li class="list-item">
+					<div class="imgCnt"></div>
+					<a>物美价廉</a>
+				</li>
+				<li class="list-item">
+					<div class="imgCnt"></div>
+					<a>物美价廉</a>
+				</li>
+					<li class="list-item">
+					<div class="imgCnt"></div>
+					<a>物美价廉</a>
+				</li>
+					<li class="list-item">
+					<div class="imgCnt"></div>
+					<a>物美价廉</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>

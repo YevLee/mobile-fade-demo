@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>减半思想布局</title>
+	<style>
+		body,p,ul{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: #eee;
+		}
+		ul{
+			list-style: none;
+			list-style: none;
+		}
+		abbr,address,article,aside,audio,b,blockquote,body,button,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    font: 16px/1.5 "Microsoft YaHei",Arial,Helvetica;
+}
+		.main{
+			width: 100%;
+			margin: 0 auto;
+			padding:0 10px;
+			box-sizing: border-box;
+			background: #fff;
+		}
+		.main .texts p{
+			font-size:13px;
+		}
+		.listWrap{
+			margin-top:30px;
+		}
+		.listItems{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.list-item{
+			width:50%;
+			text-align: center;
+		}
+		.list-item .imgCnt{
+			width:120px;
+			margin:0 auto;
+			height:100px;
+			box-sizing: border-box;
+			background: green;
+		}
+		.list-item a{
+			font-size:14px;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="texts">
+			<p>1.设计师提供的页面设计稿大小一般都是640px；</p>
+
+			<p>2.页面可视区域均以320px，并居中布局，切图的时候按照640宽度的设计稿，将各元素减半,特殊要求和自适应布局除外</p>
+
+			<p>3.不需要设置默认字体，终端浏览器会自动将字体设置为终端上的字体</p>
+		</div>
+		<div class="listWrap">
+			<ul class="listItems">
+				<li class="list-item">
+					<div class="imgCnt"></div>
+					<a>物美价廉</a>
+				</li>
+				<li class="list-item">
+					<div class="imgCnt"></div>
+					<a>物美价廉</a>
+				</li>
+				<li class="list-item">
+					<div class="imgCnt"></div>
+					<a>物美价廉</a>
+				</li>
+				<li class="list-item">
+					<div class="imgCnt"></div>
+					<a>物美价廉</a>
+				</li>
+					<li class="list-item">
+					<div class="imgCnt"></div>
+					<a>物美价廉</a>
+				</li>
+					<li class="list-item">
+					<div class="imgCnt"></div>
+					<a>物美价廉</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>
